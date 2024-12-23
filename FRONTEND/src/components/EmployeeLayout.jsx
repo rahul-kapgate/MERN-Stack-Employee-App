@@ -1,17 +1,16 @@
 import React from "react";
 import logo from "../assets/LogoImage.png";
-import { Link, useNavigate } from "react-router-dom"; 
+import { Link, useNavigate } from "react-router-dom";
 import { useUser } from "../context/UserContext.jsx";
 
 const EmployeeLayout = () => {
-  const { user, setUser } = useUser(); 
-  const navigate = useNavigate(); 
+  const { user, setUser } = useUser();
+  const navigate = useNavigate();
 
   const handleLogout = () => {
-    
     setUser({ username: "" });
     alert(`${user.username} logged out successfully!`);
-    navigate("/"); 
+    navigate("/");
   };
 
   return (
