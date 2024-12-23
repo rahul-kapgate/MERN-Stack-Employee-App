@@ -116,7 +116,9 @@ const loginAdmin = asyncHandler( async(req, res) => {
     secure: true,
   };
 
-  console.log("Admin Logged in Successfully");
+  // console.log("Admin Logged in Successfully");
+  console.log("Admin Logged in Successfully -- Done");
+
 
   return res
   .status(200)
